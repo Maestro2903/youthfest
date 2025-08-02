@@ -1,0 +1,19 @@
+{
+  "name": "youthfest",
+  "version": "1.0.0",
+  "description": "Youth Fest website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve",
+    "build": "echo 'No build step required'",
+    "start": "serve"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

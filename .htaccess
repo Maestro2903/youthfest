@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Handle /events route
+RewriteRule ^events/?$ events.html [L]
+
+# Handle /form route  
+RewriteRule ^form/?$ form.html [L]
+
+# Handle root route
+RewriteRule ^$ index.html [L]
+
+# Optional: Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
